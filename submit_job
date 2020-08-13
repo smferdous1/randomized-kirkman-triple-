@@ -1,0 +1,11 @@
+#!/bin/sh -l
+
+#SBATCH -A csit
+#SBATCH --nodes=1 
+#SBATCH --time=4:30:00
+#SBATCH --job-name k_3
+
+module load anaconda/5.3.1-py37
+#cd $SLURM_SUBMIT_DIR
+
+python3 kirkman_triple.py
